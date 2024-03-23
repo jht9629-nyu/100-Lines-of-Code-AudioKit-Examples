@@ -18,7 +18,7 @@ struct MasterView: View {
                     NavigationLink("5. Apple Sampler Example", destination: AppleSamplerView())
                 }
                 Group {
-                    NavigationLink("6. Dunne Sampler Example", destination: DunneSamplerView())
+//                    NavigationLink("6. Dunne Sampler Example", destination: DunneSamplerView())
                     NavigationLink("7. AVAudioUnitSampler Example", destination: AVAudioUnitSamplerView())
                 }
             }

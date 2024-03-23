@@ -10,7 +10,6 @@
 		5A123ED429521A5800AF6DE8 /* AppleSamplerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A123ED329521A5800AF6DE8 /* AppleSamplerExample.swift */; };
 		5A123EDB2952221400AF6DE8 /* AVAudioUnitSamplerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A123ED92952221400AF6DE8 /* AVAudioUnitSamplerExample.swift */; };
 		5A123EDC2952221400AF6DE8 /* DunneSamplerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A123EDA2952221400AF6DE8 /* DunneSamplerExample.swift */; };
-		5A123EDF2952231000AF6DE8 /* DunneAudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5A123EDE2952231000AF6DE8 /* DunneAudioKit */; };
 		5A39A94528D4992700EECFEF /* Sequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A39A94428D4992700EECFEF /* Sequencer.swift */; };
 		5A86B75828D9F8E200C20F79 /* Synth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A86B75728D9F8E200C20F79 /* Synth.swift */; };
 		5AB98BDA291C3BE200BD70F6 /* SynthPunkConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB98BD9291C3BE200BD70F6 /* SynthPunkConsole.swift */; };
@@ -83,7 +82,6 @@
 				5ABCFCAE28D361D4000A4B14 /* AudioKit in Frameworks */,
 				5AE85C0B28DA00BF00CCCC08 /* Keyboard in Frameworks */,
 				5AE85C0E28DA00D500CCCC08 /* SoundpipeAudioKit in Frameworks */,
-				5A123EDF2952231000AF6DE8 /* DunneAudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +191,6 @@
 				5AE85C0D28DA00D500CCCC08 /* SoundpipeAudioKit */,
 				5AE85C1028DA00F000CCCC08 /* Controls */,
 				5AE85C1528DA0F6E00CCCC08 /* SporthAudioKit */,
-				5A123EDE2952231000AF6DE8 /* DunneAudioKit */,
 			);
 			productName = 100LinesOfCode;
 			productReference = 5ABCFC7D28D36122000A4B14 /* 100LinesOfCode.app */;
@@ -243,7 +240,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1340;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					5ABCFC7C28D36122000A4B14 = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -273,7 +270,6 @@
 				5AE85C0C28DA00D500CCCC08 /* XCRemoteSwiftPackageReference "SoundpipeAudioKit" */,
 				5AE85C0F28DA00F000CCCC08 /* XCRemoteSwiftPackageReference "Controls" */,
 				5AE85C1428DA0F6E00CCCC08 /* XCRemoteSwiftPackageReference "SporthAudioKit" */,
-				5A123EDD2952231000AF6DE8 /* XCRemoteSwiftPackageReference "DunneAudioKit" */,
 			);
 			productRefGroup = 5ABCFC7E28D36122000A4B14 /* Products */;
 			projectDirPath = "";
@@ -401,6 +397,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -461,6 +458,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -485,10 +483,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"100LinesOfCode/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-00LinesOfCode-Info.plist";
@@ -503,7 +501,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MobyPixel.100LinesOfCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jht1900.100LinesOfCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -518,10 +516,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"100LinesOfCode/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "-00LinesOfCode-Info.plist";
@@ -536,7 +534,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MobyPixel.100LinesOfCode;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jht1900.100LinesOfCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -552,7 +550,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R6J85WRCEG;
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -572,7 +570,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R6J85WRCEG;
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MARKETING_VERSION = 1.0;
@@ -591,7 +589,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R6J85WRCEG;
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MobyPixel.-00LinesOfCodeUITests";
@@ -609,7 +607,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = R6J85WRCEG;
+				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MobyPixel.-00LinesOfCodeUITests";
@@ -663,14 +661,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5A123EDD2952231000AF6DE8 /* XCRemoteSwiftPackageReference "DunneAudioKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AudioKit/DunneAudioKit";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		5ABCFCAC28D361D4000A4B14 /* XCRemoteSwiftPackageReference "AudioKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit";
@@ -714,11 +704,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5A123EDE2952231000AF6DE8 /* DunneAudioKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 5A123EDD2952231000AF6DE8 /* XCRemoteSwiftPackageReference "DunneAudioKit" */;
-			productName = DunneAudioKit;
-		};
 		5ABCFCAD28D361D4000A4B14 /* AudioKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5ABCFCAC28D361D4000A4B14 /* XCRemoteSwiftPackageReference "AudioKit" */;
